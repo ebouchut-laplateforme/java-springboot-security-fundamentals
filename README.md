@@ -1,9 +1,9 @@
-Scaffolds a conventional Spring Boot 3.1.11 application with Java 17, including test coverage, database connectivity, and template engine support.
+Scaffolds a conventional Spring Boot 3.5.8 application with Java 17, including test coverage, database connectivity, security, and template engine support.
 The project is structured as a reusable template with `.keepme` files in all empty directories.
 
 ## Project Configuration
 
-- **Build**: Maven with Spring Boot parent POM 3.1.11
+- **Build**: Maven with Spring Boot parent POM 3.5.8
 - **Java**: 17 (configured via `java.version` property only)
 - **SDKMAN**: `.sdkmanrc` configures Java `17.0.17-tem` and Maven 3.9.11
 - **GAV**: `com.ericbouchut.java.springboot:springboot-ecf1:0.0.1-SNAPSHOT`
@@ -11,6 +11,7 @@ The project is structured as a reusable template with `.keepme` files in all emp
 ## Dependencies
 
 - **Testing**: JUnit 5 (5.9.2), JaCoCo (0.8.10), Surefire (3.0.0)
+- **Security**: Spring Security 6.5.7 with default configuration
 - **Data**: Spring Data JPA, MySQL Connector J 8.4.0
 - **View**: Thymeleaf with Spring integration
 - **API Documentation**: SpringDoc OpenAPI 2.2.0 (Swagger UI)
