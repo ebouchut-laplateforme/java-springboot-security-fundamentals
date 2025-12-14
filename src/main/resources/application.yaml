@@ -25,3 +25,53 @@ spring:
 logging:
   pattern:
     console: "%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n"
+
+  level:
+    root: INFO
+
+    # ~~~~~~~~~~~~~
+    # Application
+    # ~~~~~~~~~~~~~
+
+    com.ericbouchut.java.springboot.security: DEBUG
+
+    # ~~~~~~~~~
+    # Database
+    # ~~~~~~~~~
+
+    # Log SQL requests
+    org.hibernate.SQL: DEBUG
+
+    # Datasource configuration and connection details
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+    # ~~~~~~~~~~~~~~~~~~
+    # REST Endpoints
+    # ~~~~~~~~~~~~~~~~~~
+
+    # Log REST endpoints called, request received and response sent:
+    # Request mapping and handler resolution: "GET /hello" ==> HeloController.sayHello()
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+
+    # Handler method invocation details
+    org.springframework.web.servlet.mvc.method.annotation: DEBUG
+
+    # Request matching decisions
+    org.springframework.web.servlet.handler: DEBUG
+
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # Spring Security logging
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    # Filter chain execution
+    org.springframework.security.web.FilterChainProxy: TRACE
+
+    # Authentication attempts and results
+    org.springframework.security.authentication: DEBUG
+
+    # Authorization decisions (access granted/denied)
+    org.springframework.security.access: DEBUG
+
+    # Complete security logging (very verbose)
+    # org.springframework.security: DEBUG
+
