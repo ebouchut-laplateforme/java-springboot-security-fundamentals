@@ -1,4 +1,4 @@
-package com.ericbouchut.java.springboot.ecf1;
+package com.ericbouchut.java.springboot.security;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
